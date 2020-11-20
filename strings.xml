@@ -1,0 +1,14 @@
+<resources>
+ <string name="app_name">ProgInputBiodata</string>
+ <string name="radio_L">Laki-laki</string>
+ <string name="radio_P">Wanita</string>
+ <string name="jawab">Cek Jawaban</string>
+ <string name="agama">Study Tour</string>
+ <string-array name="listAgama">
+ <item>Islam</item>
+ <item>Protestan</item>
+ <item>Katolik</item>
+ <item>Hindu</item>
+ <item>Budha</item>
+ </string-array>
+</resources>
