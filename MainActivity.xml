@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ tools:context="e.rpl.proginputbiodata.MainActivity">
+ <TextView
+ android:id="@+id/textView1"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Nama"/>
+ <EditText
+ android:id="@+id/inputNama"
+ android:layout_below="@+id/textView1"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:hint="Nama"/>
+ <TextView
+ android:id="@+id/textView2"
+ android:layout_below="@id/inputNama"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Agama"/>
+ <Spinner
+ android:layout_below="@id/textView2"
+ android:id="@+id/pilihAgama"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:entries="@array/listAgama">
+ </Spinner>
+ <TextView
+ android:layout_marginTop="15dp"
+ android:id="@+id/textView4"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Jenis Kelamin :"
+ android:layout_below="@+id/pilihAgama" />
+ <RadioGroup
+ android:id="@+id/radioGroupJK"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_alignParentLeft="true"
+ android:layout_below="@+id/textView4" >
+ <RadioButton
+ android:id="@+id/radioL"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:checked="true"
+ android:text="@string/radio_L" />
+ <RadioButton
+ android:id="@+id/radioP"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="@string/radio_P" />
+</RadioGroup>
+ <Button
+ android:id="@+id/btnProses"
+ android:layout_below="@id/radioGroupJK"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:onClick="HasilProses"
+ android:text="Proses"/>
+ <TextView
+ android:layout_marginTop="20dp"
+ android:id="@+id/displayNama"
+ android:layout_below="@id/btnProses"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:textSize="20sp"
+ android:text="Tampil Nama"/>
+ <TextView
+ android:layout_marginTop="20dp"
+ android:id="@+id/displayAgama"
+ android:layout_below="@id/displayNama"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:textSize="20sp"
+ android:text="Tampil Agama"/>
+ <TextView
+ android:layout_marginTop="20dp"
+ android:id="@+id/displayJK"
+ android:layout_below="@id/displayAgama"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:textSize="20sp"
+ android:text="Tampil Jenis Kelamin"/>
+</RelativeLayout>
